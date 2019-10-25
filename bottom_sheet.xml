@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="60"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:foregroundGravity="center"
+        android:gravity="clip_horizontal|center|fill_horizontal|left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topOfSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="------"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/savedItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:drawableStart="@drawable/ic_saved"
+            android:drawableLeft="@drawable/ic_saved"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/advent_pro"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Saved Items"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/yourInbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:drawableStart="@drawable/ic_inbox"
+            android:drawableLeft="@drawable/ic_inbox"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/advent_pro"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Your InBox"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:drawableStart="@drawable/ic_share"
+            android:drawableLeft="@drawable/ic_share"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/advent_pro"
+            android:gravity="center_vertical"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Share"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawableLeft="@drawable/ic_settings"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/advent_pro"
+            android:gravity="center_vertical"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Settings"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</LinearLayout>
